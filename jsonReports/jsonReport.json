@@ -1,0 +1,172 @@
+{
+  "config": {
+    "configFile": "c:\\Users\\Manjunath Kumar\\Desktop\\PlayWrightTest\\playwright.config.ts",
+    "rootDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chrome:latest:MacOS Catalina@lambdatest",
+        "name": "chrome:latest:MacOS Catalina@lambdatest",
+        "testDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/Scenario1.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chrome:latest:Windows 10@lambdatest",
+        "name": "chrome:latest:Windows 10@lambdatest",
+        "testDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/Scenario1.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/Scenario1.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "c:/Users/Manjunath Kumar/Desktop/PlayWrightTest",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/Scenario1.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\Scenario1.test.ts",
+      "file": "tests/Scenario1.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TestID1",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 974,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1009\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1009\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1009\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝"
+                    },
+                    {
+                      "message": "Error: read tcp 10.163.47.253:52890->10.151.3.244:54321: read: connection reset by peer"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-06-04T11:42:19.278Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "c:\\Users\\Manjunath Kumar\\Desktop\\PlayWrightTest\\test-results\\tests-Scenario1-TestID1-chrome\\test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e7820216b6a8e87d99fc-db48484da6f8ce653a89",
+          "file": "tests/Scenario1.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-06-04T11:42:18.631Z",
+    "duration": 8996.869999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
