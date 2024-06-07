@@ -1,6 +1,26 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from "@playwright/test";
+const { chromium } = require('playwright');
 
 test('testID3', async ({ page }) => {
+
+  const capabilities = {
+    'browserName': 'Chrome', 
+    'browserVersion': 'latest',
+    'LT:Options': {
+      'platform': 'Windows 10',
+      'build': 'Playwright Sample Build',
+      'name': 'Playwright Sample Test',
+      'user': 'kumarmanjunath264',
+      'accessKey': 'Qdyc7JnkkJ7teddCryzEgutimX1BKuGklI3rgQDV7KIDvM65SA',
+      'network': true,
+      'video': true,
+      'console': true
+    }
+  }
+
+  const browser = await chromium.connect({
+    wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
+  })
   await page.goto('https://www.lambdatest.com/selenium-playground/');
   
   await page.click("//a[contains(text(),'Input Form Submit')]");
